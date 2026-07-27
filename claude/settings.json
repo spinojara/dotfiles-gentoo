@@ -7,13 +7,20 @@
       "Bash(git status)"
     ]
   },
-  "model": "claude-opus-4-8",
+  "model": "claude-opus-5",
   "statusLine": {
     "type": "command",
     "command": "bash $HOME/.claude/statusline-command.sh"
   },
+  "enabledPlugins": {
+    "clangd-lsp@claude-plugins-official": true
+  },
   "syntaxHighlightingDisabled": false,
   "effortLevel": "xhigh",
   "theme": "dark-ansi",
-  "editorMode": "vim"
+  "editorMode": "vim",
+  "env": {
+    "CLAUDE_CODE_DISABLE_MOUSE_CLICKS": "1",
+    "CLAUDE_CODE_DISABLE_MOUSE": "1"
+  }
 }
