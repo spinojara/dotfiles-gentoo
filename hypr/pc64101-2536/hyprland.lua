@@ -59,7 +59,7 @@ hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 
 hl.bind("ALT + SHIFT + p", hl.dsp.exec_cmd("systemctl poweroff"), { long_press = true })
-hl.bind("ALT + SHIFT + o", hl.dsp.exec_cmd("systemctl poweroff"), { long_press = true })
+hl.bind("ALT + SHIFT + o", hl.dsp.exec_cmd("systemctl reboot"), { long_press = true })
 
 hl.window_rule({
 	match = {
