@@ -43,8 +43,7 @@ link mako/config .config/mako/config
 
 link tofi/tofi.ini .config/tofi/tofi.ini
 
-link nix/flake.nix .config/home-manager/flake.nix
-link nix/home.nix .config/home-manager/home.nix
+ln -svf "$PWD/nix" "$HOME/.config/home-manager"
 
 link claude/settings.json .claude/settings.json
 link claude/statusline-command.sh .claude/statusline-command.sh
